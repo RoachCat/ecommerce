@@ -1,5 +1,6 @@
 'use strict';
 
+//Se rescata el ID del zapato y el número de items en el carro, ambos almacenados en sessionstorage.
 const shoeId = parseInt(sessionStorage.getItem('shoe'))
 let sessionStorageNumber = parseInt(sessionStorage.getItem('carnumber'))
 
@@ -14,9 +15,9 @@ const quantityNumber = document.querySelector('.quantityNumber')
 
 addButton.addEventListener('click', addShoeCar)
 
-let selectedShoe
+let selectedShoe /* Variable usada para filtrar del JSON las características del zapato seleccionado */
 let textQuantityNumber = 0
-
+//Se realia petición al JSON, se filtra y se pinta la información en el HTML.
 fetch('allShoes.json')
     .then(response => response.json())
     .then(data => {
@@ -43,34 +44,36 @@ fetch('allShoes.json')
         });
     })
 
+//Esta función agrega el producto al carro dependiendo de varias condiciones.
 function addShoeCar() {
     let arrayCar = []
     let quantity = parseInt(quantityField.value)
-
+//Si antes se ha agregado algún zapato al carro, entrará en este condicional y los obtendrá del sessionstorage.
     if (sessionStorage.getItem('arraycar')) {
         const arrayOfShoesInSessionStorage = JSON.parse(sessionStorage.getItem('arraycar'))
         let arrayToCompare = arrayOfShoesInSessionStorage.flat()
-        let existe = false
-
+        let exist = false
+//Se recorre el array obtenido del sessionstorage para validar si el zapato a agregar ya se ha agregado antes.
         arrayToCompare.forEach(element => {
             if (element.id === shoeId) {
-                existe = true
+                exist = true
             }
         });
-
-        if (existe) {
+//Si ya se ha agregado, solo se modificará la cantidad y se cachea nuevamente.
+        if (exist) {
             arrayToCompare.forEach(element => {
                 if (element.id === shoeId) {
                     element.quantity += quantity
                     sessionStorage.setItem('arraycar', JSON.stringify(arrayToCompare))
                 }
             });
+//Se modifica el número con la cantidad de números en el carrito.
             sessionStorageNumber = parseInt(sessionStorage.getItem('carnumber'))
             sessionStorageNumber += quantity
             overNumber.style.visibility = "visible"
             quantityNumber.innerHTML = sessionStorageNumber
             sessionStorage.setItem('carnumber', sessionStorageNumber)
-
+//Si el zapato es diferente, obtiene la info de sessionstorage, la modifica y la cachea.
         } else {
             let newSelectedShoe
             selectedShoe[0].quantity = quantity
@@ -85,6 +88,7 @@ function addShoeCar() {
             sessionStorage.setItem('carnumber', sessionStorageNumber)
         }
     } else {
+//Aquí entrará solo si es la primera vez que se agrega un zapato y modificará el ícono de items en el carrito.
         selectedShoe[0].quantity = quantity
         arrayCar.push(selectedShoe)
         sessionStorage.setItem('arraycar', JSON.stringify(arrayCar))
@@ -94,7 +98,7 @@ function addShoeCar() {
         sessionStorage.setItem('carnumber', quantity)
     }
 }
-
+//Esto carga los items existentes en el carrito.
 window.onload = function () {
     overNumber.style.visibility = "visible"
     quantityNumber.innerHTML = sessionStorageNumber

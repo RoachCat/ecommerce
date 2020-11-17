@@ -3,13 +3,13 @@
 const content = document.querySelector('.content')
 const overNumber = document.querySelector('.overNumber')
 const quantityNumber = document.querySelector('.quantityNumber')
-
+//Se obtiene la información del sessionstorage respecto a los items agregados al carro.
 let arrayOfShoesInSessionStorage = JSON.parse(sessionStorage.getItem('arraycar'))
 let sessionStorageNumber = parseInt(sessionStorage.getItem('carnumber'))
 
 if (sessionStorage.getItem('arraycar')) {
     let arrayOfShoes = arrayOfShoesInSessionStorage.flat()
-
+//En caso de haber algo en el carro, se pintarán los elementos que den la información respectiva.
     const propertiesBox = document.createElement('div')
     const emptyPropertiesBox = document.createElement('div')
     const quantity = document.createElement('h2')
@@ -26,9 +26,12 @@ if (sessionStorage.getItem('arraycar')) {
     propertiesBox.appendChild(price)
     propertiesBox.appendChild(subtotal)
     content.appendChild(propertiesBox)
-
+/* Esta variable ayuda a controlar el valor total de los productos. La declaré global ya que me resultó
+un poco engorroso pasarla entre métodos.*/
     let total = 0
-
+/* La clase "ShoppingCar" tiene como propiedad los items ingresados. En cuanto a sus métodos,
+"addShoes" lista los items en la página del carrito, "eraseShoe" permite borrar los zapatos mediante
+un botón y "addTotal" se encarga de pintar el valor total y el botón "pagar".*/ 
     class ShoppingCar {
         constructor(arrayOfShoes) {
             this.arrayOfShoes = arrayOfShoes;
@@ -74,10 +77,12 @@ if (sessionStorage.getItem('arraycar')) {
             });
             this.addTotal()
         }
-
+//Este método pone a la escucha un botón (una X en la página) para borrar zapatos.
         eraseShoe(eraseButton) {
             let shoeTargetedId
             eraseButton.addEventListener('click', (e) => {
+/* Se obtiene el id perteneciente al zapato a borrar tanto para restar su valor del total como para
+borrarlo del carrito.*/
                 const totalPriceNumber = document.querySelector('.totalPriceNumber')
                 shoeTargetedId = parseInt(e.target.id)
                 const shoeTargeted = e.target.parentElement
@@ -86,25 +91,19 @@ if (sessionStorage.getItem('arraycar')) {
                 totalPriceNumber.innerHTML = total
 
                 content.removeChild(shoeTargeted)
-
+//Con arrayOfShoes se actualiza el carrito contenido en sessionstorage.
                 arrayOfShoes = arrayOfShoes.filter(shoe => shoe.id !== shoeTargetedId)
                 sessionStorage.setItem('arraycar', JSON.stringify(arrayOfShoes))
 
-                if (arrayOfShoes.length === 0) {
-                    const empty = document.createElement('h1')
-                    const emptyText = document.createTextNode('No tienes productos en el carrito.')
-                    content.removeChild(propertiesBox)
-                    empty.appendChild(emptyText)
-                    content.appendChild(empty)
-                }
-
+//Este bloque de código se encarga de modificar el número del ícono del carrito al borrar un elemento.
                 let quantityofShoes = parseInt(shoeTargeted.firstChild.nextSibling.textContent)
                 sessionStorageNumber = parseInt(sessionStorage.getItem('carnumber'))
                 sessionStorageNumber -= quantityofShoes
                 overNumber.style.visibility = "visible"
                 quantityNumber.innerHTML = sessionStorageNumber
                 sessionStorage.setItem('carnumber', sessionStorageNumber)
-
+/* Si el array de zapatos está vacío, se eliminarán todas las etiquetas creadas en el método anterior y
+se pintará un mensaje indicando que no hay nada en el carro. */
                 this.arrayOfShoes = this.arrayOfShoes.filter(element => element.id !== shoeTargetedId)
                 if (this.arrayOfShoes.length === 0) {
                     sessionStorage.removeItem('arraycar')
@@ -126,7 +125,7 @@ if (sessionStorage.getItem('arraycar')) {
 
         addTotal() {
             let subtotal = document.querySelectorAll('.subtotalOfShoes')
-
+//Se obtiene sl subtotal de todos los zapatos para sumarlos al total.
             subtotal.forEach(subtotal => {
                 total += parseInt(subtotal.textContent)
             });
@@ -152,9 +151,10 @@ if (sessionStorage.getItem('arraycar')) {
             content.appendChild(payBox)
         }
     }
+//Aquí se instancia la clase "ShoppingCar" y se le pasa por argumeto el array de zapatos
     const shoe = new ShoppingCar(arrayOfShoes);
     shoe.addShoes()
-
+//Si no hay ningún zapato en el carrito (es decir, nada en sessionstorage) se pinta el mensaje.
 } else {
     const empty = document.createElement('h1')
     empty.setAttribute('class', 'empty')
@@ -162,7 +162,7 @@ if (sessionStorage.getItem('arraycar')) {
     empty.appendChild(emptyText)
     content.appendChild(empty)
 }
-
+//Función que muestra el ícono de los zapatos en el carrito.
 window.onload = function () {
     overNumber.style.visibility = "visible"
     quantityNumber.innerHTML = sessionStorageNumber

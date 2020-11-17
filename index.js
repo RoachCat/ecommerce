@@ -1,3 +1,4 @@
+//Muestra la cantidad de objetos actuales en el carrito
 window.onload = function(){
     const overNumber = document.querySelector('.overNumber')
     const quantityNumber = document.querySelector('.quantityNumber')
