@@ -1,0 +1,55 @@
+body{
+    font-family: "adihaus";
+    font-size: 18px;
+}
+
+@font-face{
+    font-family: "adihaus";
+    src: url(AdihausDIN.ttf);
+}
+
+.payInfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 8em;
+}
+
+.payInfo div{
+    padding: 0.5em;
+}
+
+.date-box{
+    margin: 0;
+    width: 63%;
+}
+
+.cvv{
+    margin: 0;
+    width: 17%;
+}
+
+.fullname{
+    margin-left: 5px;
+}
+
+.cardNum{
+    margin-left: 29.5px;
+}
+
+.date{
+    width: 45px;
+}
+
+.payButton{
+    margin-top: 1em;
+    margin-left: 7em;
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color: rgba(64,145,108,1);
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}

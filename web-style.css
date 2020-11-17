@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@font-face{
+    font-family: "adihaus";
+    src: url(AdihausDIN.ttf);
+}
+
+.main-header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 12px;
+    background: linear-gradient(58deg, rgba(64,145,108,1) 0%, rgba(64,145,108,1) 12%, rgba(8,28,21,1) 100%);
+    z-index: 1;
+}
+
+.main-header__title, .main-header__options-box{
+    display: inline-block;
+    font-family: "adihaus";
+    color: white;
+}
+
+.main-header__title{
+    width: 100%;
+    margin-top: 8px;
+    margin-left: 1em;
+    color: white;
+}
+
+.main-header__options-box{
+    width: 30%;
+}
+
+.main-header__products{
+    text-decoration: none;    
+    color: white;
+    font-size: 22px;
+}
+
+.main-header__products{
+    margin-left: 1em;
+}
+
+.main-header__car{
+    margin-right: 2em;
+}
+
+.main-header__car-img{
+    width: 60%;
+}
+
+.overNumber{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    right: 3.8em;
+    top: 15px;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 50%;
+    width: 1.2em;
+    height: 1.2em;
+    visibility: hidden;
+}
+
+.quantityNumber-box{
+    margin-right: 4px;
+}
+
+.quantityNumber{
+    margin-top: 2px;
+    margin-left: 4px;
+    font-family: "adihaus";
+    font-weight: bold;
+    color: black;
+}
+
+.main-footer{
+    margin: 0;
+    background-color: rgb(11,11,11);
+    padding-top: 0.7em;
+    text-align: center;
+    margin-top: auto;
+    font-family: "Adihaus";
+    color: white;
+}
+
+.main-footer p{
+    margin: 0;
+}
+
+.main-footer img{
+    width: 30px;
+    padding: 0 7px 0 7px;
+}

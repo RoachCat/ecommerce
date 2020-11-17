@@ -1,0 +1,38 @@
+.main-img{
+    width: 80%;
+    margin: 6em auto 0 auto;
+}
+
+.main-img__img{
+    width: 100%;
+}
+
+.main-category{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-category__women{
+    margin-top: 1em;
+    width: 25em;
+    height: 18.7em;
+}
+
+.main-category__men{
+    margin-top: 1em;
+    right: 0;
+    width: 25em;
+    height: 18.7em;
+}
+
+.main-category__img{
+    width: 100%;
+}
+

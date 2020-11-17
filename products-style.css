@@ -1,0 +1,60 @@
+.sidebar{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 12em;
+    height: 94.5%;
+    margin-top: 5.2em;
+    margin-bottom: 5.2em;
+    padding-top: 3em;
+}
+
+.category{
+    padding-top: 0.2em;
+    padding-left: 1.7em;
+    padding-right: 0.5em;
+    margin-bottom: 1.5em;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Adihaus";
+    color: rgba(64,145,108,1);
+}
+
+.category:hover{
+    color: white;
+    background-color: rgba(64,145,108,1);
+}
+
+.content{
+    margin-top: 7em;
+    margin-left: 12.3em;
+}
+
+.shoeBox{
+    display: inline-block;
+    margin: 1.5em;
+    width: 28%;
+    height: 15em;
+    font-family: "Adihaus";
+}
+
+.shoeBox img{
+    width: 100%;
+}
+
+.shoeBox h3{
+    margin: 0;
+    font-size: 22px;
+    color: black;
+}
+
+.shoeBox p{
+    margin: 0;
+    color: rgba(64,145,108,1);
+    font-size: 22px;
+}
+
+.shoeBox p::before{
+    content: "$";
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaparunning</title>
+    <link rel="stylesheet" href="web-style.css">
+    <link rel="stylesheet" href="pay-info.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <a href="index.html">
+            <img src="Imágenes/zaparunning-logo.svg" alt="" class="main-header__title">
+        </a>
+        <div class="main-header__options-box">
+            <a href="all_shoes.html" class="main-header__products">PRODUCTOS</a>
+        </div>
+        <div class="main-header__car">
+            <a href="shopping-car.html">
+                <div class="overNumber">
+                    <p class="quantityNumber"></p>
+                </div>
+                <img src="Imágenes/shopping_car.png" alt="" class="main-header__car-img">
+            </a>
+        </div>
+    </header>
+
+    <div class="payInfo">
+        <form action="">
+            <div class="fullname-box">
+                <label for="fullname">Nombre completo</label>
+                <input type="text" id="fullname" class="fullname">
+            </div>
+            <div class="email-box">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" class="email">
+            </div>
+            <div class="cardNum-box">
+                <label for="cardNum">No. de tarjeta </label>
+                <input type="text" id="cardNum" class="cardNum">
+            </div>
+            <div class="date-box">
+                <label for="date">Fecha de vencimiento</label>
+                <input type="text" id="date" class="date" value="MM/AA" onfocus="this.value=''">
+            </div>
+            <div class="cvv-box">
+                <label for="cvv">CVV</label>
+                <input type="number" min="0" max="999" id="cvv" class="cvv">
+            </div>
+            <button type="button" class="payButton">PAGAR</button>
+        </form>
+    </div>
+
+
+    <footer class="main-footer">
+        <p>Diseñado por: Sebastián Giraldo Martínez</p>
+        <p>Correo electrónico: sebagiro@gmail.com</p>
+        <a href="https://www.instagram.com/sebasstiangm/" target="_blank"><img src="Imágenes/instagram-icon.svg" alt="Instagram"></a> 
+        <a href="https://twitter.com/roachcat15" target="_blank"><img src="Imágenes/twitter-icon.svg" alt="Twitter"></a>
+        <a href="https://github.com/RoachCat" target="_blank"><img src="Imágenes/github-icon.svg" alt="Github"></a>
+    </footer>
+
+    <script src="pay-info.js"></script>
+</body>
