@@ -18,7 +18,7 @@ body{
     width: 100%;
     top: 0;
     left: 0;
-    padding: 12px;
+    padding: 14px;
     background: linear-gradient(58deg, rgba(64,145,108,1) 0%, rgba(64,145,108,1) 12%, rgba(8,28,21,1) 100%);
     z-index: 1;
 }
@@ -30,7 +30,7 @@ body{
 }
 
 .main-header__title{
-    width: 20em;
+    width: 22.5em;
     margin-top: 8px;
     margin-left: 1em;
     color: white;
@@ -43,7 +43,7 @@ body{
 .main-header__products{
     text-decoration: none;    
     color: white;
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .main-header__products{
