@@ -1,25 +1,23 @@
 'use strict';
 
-const productsButton = document.querySelector('.main-header__products')
-const sideBarAllProducts = document.querySelector('.sidebar__all')
+const menProductsButton = document.querySelector('.sidebar__men')
 const content = document.querySelector('.content')
 
 //Variable de control que permite pintar los zapatos una única vez.
 let clicked = true
 
 content.addEventListener('click', targeted)
-sideBarAllProducts.addEventListener('click', paintShoes)
-productsButton.addEventListener('click', paintShoes)
+menProductsButton.addEventListener('click', paintShoes)
 
-//Función para pintar todos los zapatos existentes en el JSON. Todo el HTML se genera aquí.
+//Función para pintar los zapatos de hombre existentes en el JSON. Todo el HTML se genera aquí.
 /* Algo a resaltar es que es necesario usar un servidor, pues corriendo en local el navegador lanza un
 error de CORS y la petición por fetch no funciona. En mi caso usé la extensión "live server"*/
 function paintShoes() {
     if (clicked === true) {
-        fetch('./allShoes.json')
+        fetch('../allShoes.json')
             .then(response => response.json())
             .then(data => {
-                let allShoes = data.allshoes
+                let allShoes = data.allshoes.filter(shoe => shoe.gender === "men")
 
                 allShoes.forEach(shoe => {
                     const product = document.createElement('div')
@@ -44,16 +42,15 @@ function paintShoes() {
                     product.appendChild(shoeName)
                     product.appendChild(shoePrice)
                     content.appendChild(product)
-
                 });
             })
         clicked = false
     }
 }
 
-//Se muestran los productos en el carrito y se pintan los zapatos nada más presionar en el botón "productos".
+//Se muestran los productos en el carrito y se pintan los zapatos nada más presionar en el botón de la página.
 window.onload = function () {
-    productsButton.click()
+    menProductsButton.click()
 
     const overNumber = document.querySelector('.overNumber')
     const quantityNumber = document.querySelector('.quantityNumber')
@@ -73,6 +70,3 @@ function targeted(e) {
         sessionStorage.setItem('shoe', idTarget)
     }
 }
-
-
-

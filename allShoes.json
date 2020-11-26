@@ -7,9 +7,9 @@
             "distance": "Media maratón, Maratón",
             "gender" : "men",
             "id" : 0,
-            "description": "Por fin están a la venta las legendarias zapatillas usadas por el keniata Eliud Kipchoge en el reto del equipo INEOS, y su importancia radica en el hecho de que este personaje logró la asombrosa marca de 1:59:40 en una maratón (42kms), hazaña merecedora de muchos halagos ya que se decía que era imposible bajar de 2 horas en esta prueba. El 'Next%' hace referencia al porcentaje de energía que, afirman los estudios, se economiza con un adecuado gesto técnico de carrera (que es de aproximadamente un 4%). Finalmente se ponen a disposición del público general. Su placa de fibra de carbono, sus Nike Zoom Air Poods y la espuma Nike ZoomX hacen de esta zapatilla uno de los mejores prototipos en tecnología de running jamás creados, cuyas características se pueden percibir en mayor medida al correr en ritmos inferiores a 3:45 min/km. Diseñada específicamente para competiciones (y no tanto para entrenamientos) y siendo las distancias predilectas la media maratón y la maratón.",
+            "description": "Por fin están a la venta las legendarias zapatillas usadas por el keniata Eliud Kipchoge en el reto del equipo INEOS, y su importancia radica en el hecho de que este personaje logró la asombrosa marca de 1:59:40 en una maratón (42kms), hazaña merecedora de muchos halagos ya que se decía que era imposible bajar de 2 horas en esta zaparunning. El 'Next%' hace referencia al porcentaje de energía que, afirman los estudios, se economiza con un adecuado gesto técnico de carrera (que es de aproximadamente un 4%). Finalmente se ponen a disposición del público general. Su placa de fibra de carbono, sus Nike Zoom Air Poods y la espuma Nike ZoomX hacen de esta zapatilla uno de los mejores prototipos en tecnología de running jamás creados, cuyas características se pueden percibir en mayor medida al correr en ritmos inferiores a 3:45 min/km. Diseñada específicamente para competiciones (y no tanto para entrenamientos) y siendo las distancias predilectas la media maratón y la maratón.",
             "price": 999900,
-            "img": "Imágenes/Hombres/nike_alphafly.jpg"
+            "img": "/zaparunning/imgs/Hombres/nike_alphafly.jpg"
         },
         {
             "name": "Adidas Adizero Boston 8",
@@ -20,7 +20,7 @@
             "id" : 1,
             "description": "Adidas no deja de impresionar con su serie Boston, zapato que hace honor, justamente, a la mítica Maratón de Boston. En esta ocasión tenemos la versión 8 del modelo, el cual es muy preferido por los atletas élite tanto para sus entrenamientos como para sus competiciones. Es un zapato muy versátil ya que se puede usar para hacer marcas bajísimas desde 5K hasta tener un desempeño sensacional en maratón. Con su tradicional tecnología de amortiguación Boost en la parte trasera, suela de la marca fabricadora de llantas Continental, y su sistema de torsión en la media suela, se puede obtener un gran desempeño tanto en días de repeticiones como en días de fondos largos.",
             "price": 400000,
-            "img": "Imágenes/Hombres/adidas_boston_8.jpg"
+            "img": "/zaparunning/imgs/Hombres/adidas_boston_8.jpg"
         },
         {
             "name": "Nike Vaporfly Next%",
@@ -31,7 +31,7 @@
             "id" : 2,
             "description": "Las Nike Vaporfly Next% son las antecesoras de las legendarias Nike Alphafly Next%. Ya las usó Kipchoge en su momento, las usa Kenenisa Bekele, y es usada por una enorme cantidad de atletas (élites y aficionados) alrededor del mundo, tanto por su versatilidad como por lo ligeras y cómodas que son. Al igual que sus predecesoras, las Vaporfly cuentan con una placa de carbono que incrementa el retorno luego de impactar el suelo, y una espuma ZoomX que ayuda a amortiguar. Al igual que en las de este modelo, el 'Next%' hace referencia al porcentaje de energía que, afirman los estudios, se economiza con un adecuado gesto técnico de carrera (aproximadamente un  3 - 4%). Son aptas para carreras cortas (como un 5k) hasta una maratón, y es por este aspecto que son tan preferidas por los corredores. Al igual que pasa con las Alphafly, este modelo está indicado más que todo para competir.",
             "price": 650000,
-            "img": "Imágenes/Hombres/nike_vaporfly.jpg"
+            "img": "/zaparunning/imgs/Hombres/nike_vaporfly.jpg"
         },
         {
             "name": "Adidas Adizero Adios Pro",
@@ -42,7 +42,7 @@
             "id" : 3,
             "description": "Dada su batalla eterna con Nike, Adidas no se queda atrás y saca este atípico modelo que rompe con el estilo convencional de la marca con el fin de hacerle frente a las míticas Nike Alphafly. Su espuma LightstrikePRO junto con las 5 varillas de carbono ubicadas a lo largo de la estructura ósea del pie permiten que haya un retorno de energía excepcional, generando un impulso que ayuda a mantener los ritmos rápidos de los corredores. Los 3 primeros puestos de las ramas masculinas y femeninas del último mundial de media maratón realizado en Gdynia usaron estas zapatillas, lo cual deja muy bien parada a Adidas frente a la competición élite mundial. Claramente su potencial podrá verse reflejado en ritmos rápidos, por debajo de 3:50 min/km, y son aptas tanto para competencia como para entrenamientos.",
             "price": 840000,
-            "img": "Imágenes/Hombres/Adidas_Adizero_Adios_Pro.jpg"
+            "img": "/zaparunning/imgs/Hombres/Adidas_Adizero_Adios_Pro.jpg"
         },
         {
             "name": "Saucony Endorphin Speed",
@@ -53,7 +53,7 @@
             "id" : 4,
             "description": "La marca Saucony ofrece unos zapatos que presentan una mediasuela del nuevo compuesto PWRRUN PB con la combinación de una placa (aparentemente de carbono, pero es nylon) para ofrecer, según ellos, el equilibrio perfecto entre amortiguación blanda y reactividad. Por último, la tecnología Speedroll también se presenta como una de las grandes protagonistas a la hora de invitar a la zapatilla a coger velocidad en carrera. Tanto por este último aspecto como por toda la tecnología usada, el retorno de energía resulta excepcional para aquellos corredores que van por debajo de los 4:00 min/km. Una zapatilla apta tanto para competencias como para entrenamientos.",
             "price": 775000,
-            "img": "Imágenes/Hombres/Saucony_Endorphin_Speed.jpg"
+            "img": "/zaparunning/imgs/Hombres/Saucony_Endorphin_Speed.jpg"
         },
         {
             "name": "Asics Metaracer",
@@ -64,7 +64,7 @@
             "id" : 5,
             "description": "Asics siempre se ha caracterizado por sacar zapatos diseñados principalmente para corredores fondistas o que gustan de hacer muchos kilómetros en una sesión. En esta ocasión, la firma japonesa presenta se modelo Metaracer que a simple vista se ve una zapatilla apta para sesiones rápidas, pero versátil en largas ditancias. La tecnología Guidesole en combinación con la placa estabilizadora de carbono y la tecnología Flytefoam garantizan una pisada muy suave, ligera y estable, incluso en las tiradas más largas y exigentes. Un zapato construido principalmente para la competición y para batir marcas, con una suela de forma atípica pero que garantiza el agarre.",
             "price": 730000,
-            "img": "Imágenes/Hombres/asics_metaracer.jpg"
+            "img": "/zaparunning/imgs/Hombres/asics_metaracer.jpg"
         },
         {
             "name": "Hoka One One Carbon X",
@@ -75,7 +75,7 @@
             "id" : 6,
             "description": "Uno de los aspectos que diferencia a Hoka del resto de marcas es el alto talón de sus zapatos, y esta no es la excepción. Se trata de un producto de competición orientado a ofrecer una estabilidad y protección superior en carrera. La ligereza de este modelo contrasta con su capacidad amortiguadora gracias a su espuma Profly X que, al mismo tiempo, favorece una conducción más dinámica y natural del pie. Su placa de carbono, ubicada en la media suela, otorga la reactividad necesaria para mantener ritmos vivos y rápidos. Sin duda, un gran producto por parte de la firma americana.",
             "price": 500000,
-            "img": "Imágenes/Hombres/hoka_one_carbon.jpg"
+            "img": "/zaparunning/imgs/Hombres/hoka_one_carbon.jpg"
         },
         {
             "name": "Adidas Adizero Adios 5",
@@ -86,7 +86,7 @@
             "id" : 7,
             "description": "Si hablamos de versatilidad, la serie de zapatos Adios de Adidas es, sin duda, un sinónimo perfecto. Sin duda alguna es uno de los modelos más emblemáticos de la marca de las tres bandas. La mayoría de atletas élite valoran esta referencia como unos zapatos para arañar segundos, pues es óptima para ir a ritmos muy rápidos y batir hasta las marcas más difíciles. Nuevamente tenemos uuna suela fabricada con el caucho de las llantas Continental, su sistema de torsión en el medio pie para dar mayor estabilidad a la pisada, y, como era de esperarse, su emblemático Boost en la parte del talón para una mayor amortiguación y durabilidad del zapato. Son, sin lugar a duda, perfectos tanto para entrenamientos como para competir.",
             "price": 550000,
-            "img": "Imágenes/Hombres/adidas_adios_5.jpg"
+            "img": "/zaparunning/imgs/Hombres/adidas_adios_5.jpg"
         },
         {
             "name": "New Balance Fresh Foam 1080v10",
@@ -97,7 +97,7 @@
             "id" : 8,
             "description": "La característica principal de las Fresh Foam es una comodidad máxima y constante, y esto se evidencia principalmente en las tiradas largas, lo cual es de agradecer ya que ayuda a amortiguar el peso adecuadamente. Gracias al análisis de los datos que aportan los propios corredores, se puede afirmar que la espuma Fresh Foam X da mayor ligereza, más capacidad de amortiguación y más reactividad en cada pisada. En cuanto a la suela, se pueden apreciar algunas divisiones que hacen más flexible a la zapatilla y, por consiguiente, permiten una mayor tracción y mayor agarre. Un zapato indicado principalmente para sesiones de entrenamiento que incluyan muchos kilómetros a recorrer.",
             "price": 510000,
-            "img": "Imágenes/Hombres/new_balance.jpg"
+            "img": "/zaparunning/imgs/Hombres/new_balance.jpg"
         },
         {
             "name": "Mizuno Wave Rider 23",
@@ -108,7 +108,7 @@
             "id" : 9,
             "description": "Con un estilo clásico que sigue manteniéndose con el pasar de los años, la marca nipona trae el modelo Wave Rider 23 de estas Mizuno, ofreciendo una excelente amortiguación y estabilidad. Es un zapato que está orientado para todo tipo de público, tanto como para los que están iniciando como para corredores muy experimentados. Aunque sea un producto optimizado para la larga distancia, responde de muy buena manera en distancias inferiores a los 10km. Su sistema CloudWave guía correctamente al pie en la fase de aterrizaje, priorizando así el gesto técnico de cada corredor.",
             "price": 390000,
-            "img": "Imágenes/Hombres/mizuno-wave-rider-23.jpg"
+            "img": "/zaparunning/imgs/Hombres/mizuno-wave-rider-23.jpg"
         },
         {
             "name": "Nike Alphafly Next%",
@@ -117,9 +117,9 @@
             "distance": "Media maratón, Maratón",
             "gender" : "women",
             "id" : 10,
-            "description": "Por fin están a la venta las legendarias zapatillas usadas por el keniata Eliud Kipchoge en el reto del equipo INEOS, y su importancia radica en el hecho de que este personaje logró la asombrosa marca de 1:59:40 en una maratón (42kms), hazaña merecedora de muchos halagos ya que se decía que era imposible bajar de 2 horas en esta prueba. El 'Next%' hace referencia al porcentaje de energía que, afirman los estudios, se economiza con un adecuado gesto técnico de carrera (que es de aproximadamente un 4%). Finalmente se ponen a disposición del público general. Su placa de fibra de carbono, sus Nike Zoom Air Poods y la espuma Nike ZoomX hacen de esta zapatilla uno de los mejores prototipos en tecnología de running jamás creados, cuyas características se pueden percibir en mayor medida al correr en ritmos inferiores a 3:45 min/km. Diseñada específicamente para competiciones (y no tanto para entrenamientos) y siendo las distancias predilectas la media maratón y la maratón.",
+            "description": "Por fin están a la venta las legendarias zapatillas usadas por el keniata Eliud Kipchoge en el reto del equipo INEOS, y su importancia radica en el hecho de que este personaje logró la asombrosa marca de 1:59:40 en una maratón (42kms), hazaña merecedora de muchos halagos ya que se decía que era imposible bajar de 2 horas en esta zaparunning. El 'Next%' hace referencia al porcentaje de energía que, afirman los estudios, se economiza con un adecuado gesto técnico de carrera (que es de aproximadamente un 4%). Finalmente se ponen a disposición del público general. Su placa de fibra de carbono, sus Nike Zoom Air Poods y la espuma Nike ZoomX hacen de esta zapatilla uno de los mejores prototipos en tecnología de running jamás creados, cuyas características se pueden percibir en mayor medida al correr en ritmos inferiores a 3:45 min/km. Diseñada específicamente para competiciones (y no tanto para entrenamientos) y siendo las distancias predilectas la media maratón y la maratón.",
             "price": 999900,
-            "img": "Imágenes/Mujeres/nike-womens-air-zoom-alphafly-next.jpg"
+            "img": "/zaparunning/imgs/Mujeres/nike-womens-air-zoom-alphafly-next.jpg"
         },
         {
             "name": "Adidas Adizero Boston 8",
@@ -130,7 +130,7 @@
             "id" : 11,
             "description": "Adidas no deja de impresionar con su serie Boston, zapato que hace honor, justamente, a la mítica Maratón de Boston. En esta ocasión tenemos la versión 8 del modelo, el cual es muy preferido por los atletas élite tanto para sus entrenamientos como para sus competiciones. Es un zapato muy versátil ya que se puede usar para hacer marcas bajísimas desde 5K hasta tener un desempeño sensacional en maratón. Con su tradicional tecnología de amortiguación Boost en la parte trasera, suela de la marca fabricadora de llantas Continental, y su sistema de torsión en la media suela, se puede obtener un gran desempeño tanto en días de repeticiones como en días de fondos largos.",
             "price": 400000,
-            "img": "Imágenes/Mujeres/adidas_boston_8.jpg"
+            "img": "/zaparunning/imgs/Mujeres/adidas_boston_8.jpg"
         },
         {
             "name": "Nike Vaporfly Next%",
@@ -141,7 +141,7 @@
             "id" : 12,
             "description": "Las Nike Vaporfly Next% son las antecesoras de las legendarias Nike Alphafly Next%. Ya las usó Kipchoge en su momento, las usa Kenenisa Bekele, y es usada por una enorme cantidad de atletas (élites y aficionados) alrededor del mundo, tanto por su versatilidad como por lo ligeras y cómodas que son. Al igual que sus predecesoras, las Vaporfly cuentan con una placa de carbono que incrementa el retorno luego de impactar el suelo, y una espuma ZoomX que ayuda a amortiguar. Al igual que en las de este modelo, el 'Next%' hace referencia al porcentaje de energía que, afirman los estudios, se economiza con un adecuado gesto técnico de carrera (aproximadamente un  3 - 4%). Son aptas para carreras cortas (como un 5k) hasta una maratón, y es por este aspecto que son tan preferidas por los corredores. Al igual que pasa con las Alphafly, este modelo está indicado más que todo para competir.",
             "price": 650000,
-            "img": "Imágenes/Mujeres/vaporfly.jpg"
+            "img": "/zaparunning/imgs/Mujeres/vaporfly.jpg"
         },
         {
             "name": "Adidas Adizero Adios Pro",
@@ -152,7 +152,7 @@
             "id" : 13,
             "description": "Dada su batalla eterna con Nike, Adidas no se queda atrás y saca este atípico modelo que rompe con el estilo convencional de la marca con el fin de hacerle frente a las míticas Nike Alphafly. Su espuma LightstrikePRO junto con las 5 varillas de carbono ubicadas a lo largo de la estructura ósea del pie permiten que haya un retorno de energía excepcional, generando un impulso que ayuda a mantener los ritmos rápidos de los corredores. Los 3 primeros puestos de las ramas masculinas y femeninas del último mundial de media maratón realizado en Gdynia usaron estas zapatillas, lo cual deja muy bien parada a Adidas frente a la competición élite mundial. Claramente su potencial podrá verse reflejado en ritmos rápidos, por debajo de 3:50 min/km, y son aptas tanto para competencia como para entrenamientos.",
             "price": 840000,
-            "img": "Imágenes/Mujeres/Adidas_Adizero_Adios_Pro.jpg"
+            "img": "/zaparunning/imgs/Mujeres/Adidas_Adizero_Adios_Pro.jpg"
         },
         {
             "name": "Saucony Endorphin Speed",
@@ -163,7 +163,7 @@
             "id" : 14,
             "description": "La marca Saucony ofrece unos zapatos que presentan una mediasuela del nuevo compuesto PWRRUN PB con la combinación de una placa (aparentemente de carbono, pero es nylon) para ofrecer, según ellos, el equilibrio perfecto entre amortiguación blanda y reactividad. Por último, la tecnología Speedroll también se presenta como una de las grandes protagonistas a la hora de invitar a la zapatilla a coger velocidad en carrera. Tanto por este último aspecto como por toda la tecnología usada, el retorno de energía resulta excepcional para aquellos corredores que van por debajo de los 4:00 min/km. Una zapatilla apta tanto para competencias como para entrenamientos.",
             "price": 775000,
-            "img": "Imágenes/Mujeres/saucony.jpg"
+            "img": "/zaparunning/imgs/Mujeres/saucony.jpg"
         },
         {
             "name": "Hoka One One Carbon X",
@@ -174,7 +174,7 @@
             "id" : 15,
             "description": "Uno de los aspectos que diferencia a Hoka del resto de marcas es el alto talón de sus zapatos, y esta no es la excepción. Se trata de un producto de competición orientado a ofrecer una estabilidad y protección superior en carrera. La ligereza de este modelo contrasta con su capacidad amortiguadora gracias a su espuma Profly X que, al mismo tiempo, favorece una conducción más dinámica y natural del pie. Su placa de carbono, ubicada en la media suela, otorga la reactividad necesaria para mantener ritmos vivos y rápidos. Sin duda, un gran producto por parte de la firma americana.",
             "price": 500000,
-            "img": "Imágenes/Mujeres/hoka.jpg"
+            "img": "/zaparunning/imgs/Mujeres/hoka.jpg"
         },
         {
             "name": "Adidas Adizero Adios 5",
@@ -185,7 +185,7 @@
             "id" : 16,
             "description": "Si hablamos de versatilidad, la serie de zapatos Adios de Adidas es, sin duda, un sinónimo perfecto. Sin duda alguna es uno de los modelos más emblemáticos de la marca de las tres bandas. La mayoría de atletas élite valoran esta referencia como unos zapatos para arañar segundos, pues es óptima para ir a ritmos muy rápidos y batir hasta las marcas más difíciles. Nuevamente tenemos uuna suela fabricada con el caucho de las llantas Continental, su sistema de torsión en el medio pie para dar mayor estabilidad a la pisada, y, como era de esperarse, su emblemático Boost en la parte del talón para una mayor amortiguación y durabilidad del zapato. Son, sin lugar a duda, perfectos tanto para entrenamientos como para competir.",
             "price": 550000,
-            "img": "Imágenes/Mujeres/adidas-adios-5.jpg"
+            "img": "/zaparunning/imgs/Mujeres/adidas-adios-5.jpg"
         },
         {
             "name": "New Balance Fresh Foam 1080v10",
@@ -196,7 +196,7 @@
             "id" : 17,
             "description": "La característica principal de las Fresh Foam es una comodidad máxima y constante, y esto se evidencia principalmente en las tiradas largas, lo cual es de agradecer ya que ayuda a amortiguar el peso adecuadamente. Gracias al análisis de los datos que aportan los propios corredores, se puede afirmar que la espuma Fresh Foam X da mayor ligereza, más capacidad de amortiguación y más reactividad en cada pisada. En cuanto a la suela, se pueden apreciar algunas divisiones que hacen más flexible a la zapatilla y, por consiguiente, permiten una mayor tracción y mayor agarre. Un zapato indicado principalmente para sesiones de entrenamiento que incluyan muchos kilómetros a recorrer.",
             "price": 510000,
-            "img": "Imágenes/Mujeres/new-balance.jpg"
+            "img": "/zaparunning/imgs/Mujeres/new-balance.jpg"
         },
         {
             "name": "Mizuno Wave Rider 23",
@@ -207,7 +207,7 @@
             "id" : 18,
             "description": "Con un estilo clásico que sigue manteniéndose con el pasar de los años, la marca nipona trae el modelo Wave Rider 23 de estas Mizuno, ofreciendo una excelente amortiguación y estabilidad. Es un zapato que está orientado para todo tipo de público, tanto como para los que están iniciando como para corredores muy experimentados. Aunque sea un producto optimizado para la larga distancia, responde de muy buena manera en distancias inferiores a los 10km. Su sistema CloudWave guía correctamente al pie en la fase de aterrizaje, priorizando así el gesto técnico de cada corredor.",
             "price": 390000,
-            "img": "Imágenes/Mujeres/mizuno.jpg"
+            "img": "/zaparunning/imgs/Mujeres/mizuno.jpg"
         }
     ]
 }

@@ -1,23 +1,25 @@
 'use strict';
 
-const womenProductsButton = document.querySelector('.sidebar__women')
+const productsButton = document.querySelector('.main-header__products')
+const sideBarAllProducts = document.querySelector('.sidebar__all')
 const content = document.querySelector('.content')
 
 //Variable de control que permite pintar los zapatos una única vez.
 let clicked = true
 
 content.addEventListener('click', targeted)
-womenProductsButton.addEventListener('click', paintShoes)
+sideBarAllProducts.addEventListener('click', paintShoes)
+productsButton.addEventListener('click', paintShoes)
 
-//Función para pintar los zapatos de mujer existentes en el JSON. Todo el HTML se genera aquí.
+//Función para pintar todos los zapatos existentes en el JSON. Todo el HTML se genera aquí.
 /* Algo a resaltar es que es necesario usar un servidor, pues corriendo en local el navegador lanza un
 error de CORS y la petición por fetch no funciona. En mi caso usé la extensión "live server"*/
 function paintShoes() {
     if (clicked === true) {
-        fetch('allShoes.json')
+        fetch('../allShoes.json')
             .then(response => response.json())
             .then(data => {
-                let allShoes = data.allshoes.filter(shoe => shoe.gender === "women")
+                let allShoes = data.allshoes
 
                 allShoes.forEach(shoe => {
                     const product = document.createElement('div')
@@ -42,15 +44,16 @@ function paintShoes() {
                     product.appendChild(shoeName)
                     product.appendChild(shoePrice)
                     content.appendChild(product)
+
                 });
             })
         clicked = false
     }
 }
 
-//Se muestran los productos en el carrito y se pintan los zapatos nada más presionar en el botón de la página.
+//Se muestran los productos en el carrito y se pintan los zapatos nada más presionar en el botón "productos".
 window.onload = function () {
-    womenProductsButton.click()
+    productsButton.click()
 
     const overNumber = document.querySelector('.overNumber')
     const quantityNumber = document.querySelector('.quantityNumber')
@@ -67,6 +70,9 @@ página pueda dar el detalle del zapato. */
 function targeted(e) {
     const idTarget = parseInt(e.target.id)
     if (isNaN(idTarget) === false) {
-        sessionStorage.setItem('shoe', idTarget)        
+        sessionStorage.setItem('shoe', idTarget)
     }
 }
+
+
+

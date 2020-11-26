@@ -18,7 +18,7 @@ addButton.addEventListener('click', addShoeCar)
 let selectedShoe /* Variable usada para filtrar del JSON las características del zapato seleccionado */
 let textQuantityNumber = 0
 //Se realia petición al JSON, se filtra y se pinta la información en el HTML.
-fetch('allShoes.json')
+fetch('../allShoes.json')
     .then(response => response.json())
     .then(data => {
         selectedShoe = data.allshoes.filter(shoe => shoe.id === shoeId)
