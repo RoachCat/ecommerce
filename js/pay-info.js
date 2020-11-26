@@ -1,5 +1,8 @@
 const fullname = document.querySelector('.fullname')
 const email = document.querySelector('.email')
+const cardNum = document.querySelector('.cardNum')
+const date = document.querySelector('.date')
+const cvv = document.querySelector('.cvv')
 const payButton = document.querySelector('.payButton')
 const overNumber = document.querySelector('.overNumber')
 const quantityNumber = document.querySelector('.quantityNumber')
@@ -27,7 +30,7 @@ for (let i = 0; i < purchaseInfo.length; i++) {
 }
 //Se genera un JSON y se eliminan los elementos del sessionstorage.
 function newInvoice() {
-    let invoice = new createInvoice(fullname.value, email.value, totalPurchase, total)
+    let invoice = new createInvoice(fullname.value, email.value, cardNum.value, date.value, cvv.value, totalPurchase, total)
     let jsonInvoice = JSON.stringify(invoice, undefined, 2)//Los parámetros 2 y 3 hacen más legible el JSON.
     sessionStorage.removeItem('shoe')
     sessionStorage.removeItem('arraycar')
@@ -56,9 +59,12 @@ function purchasedShoes(shoes, quantity, price, subtotal) {
     this.subtotal = subtotal
 }
 //Se crea un objeto con el nombre y correo electrónico de la persona, además de la información de la compra.
-function createInvoice(name, email, purchase, total) {
+function createInvoice(name, email, cardNum, date, cvv, purchase, total) {
     this.name = name
     this.email = email
+    this.cardNum = cardNum
+    this.date_card = date
+    this.cvv = cvv
     this.purchase = purchase
     this.total = total
 }
